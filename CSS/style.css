@@ -1,0 +1,41 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    background: black;
+}
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    
+}
+/* navbar:image style */
+#logo{
+    margin: 10px 44px;
+}
+#logo img{
+    height: 113px;
+    margin: 10px 11px;
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+   
+    font-size: 1.3rem;
+    list-style: none;
+}
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding:15px 22px ;
+    border-radius: 10px;
+    
+}
+#navbar ul li a:hover{
+   color: red;
+   background-color: white;
+}
+
