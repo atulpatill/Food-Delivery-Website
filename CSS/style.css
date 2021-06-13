@@ -2,13 +2,19 @@
 *{
     margin: 0px;
     padding: 0px;
-    background: black;
+  
 }
+/* CSS Variable */
+:root{
+    --navbar-height:59px;
+}
+
+
 /* navbar */
 #navbar{
     display: flex;
     align-items: center;
-    
+    position: relative;
 }
 /* navbar:image style */
 #logo{
@@ -20,27 +26,89 @@
 }
 #navbar ul{
     display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+    
     
 }
 #navbar ul li{
-   
+    font-weight: 900;
     font-size: 1.3rem;
     list-style: none;
 }
 #navbar ul li a{
     display: block;
     color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
     text-decoration: none;
-    padding:15px 22px ;
-    border-radius: 10px;
-    
+
 }
 #navbar ul li a:hover{
-   color: red;
-   background-color: white;
+    color: black;
+    background-color: whitesmoke;
+
 }
-#navbar ::before {
+
+#navbar::before {
     content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+   opacity: 0.4;
     
 }
 
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../spaghetti-1932466_1920.jpg') center no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+   opacity: 0.89;
+}
+
+/* Utility Classes */
+.h-primary{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Tamma 2', cursive;
+
+}
+.btn{
+    display: block;
+    width: 22%;
+    margin: 6px auto;
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 14px;
+    
+    background-color: antiquewhite;
+    border: 2px solid white;
+}
+.btn:hover{
+    border: 2px solid red;
+    color: black;
+   background-color: tomato;
+   cursor: pointer;
+   
+}
