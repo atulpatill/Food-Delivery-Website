@@ -131,6 +131,9 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
    cursor: pointer;
    
 }
+.section-container{
+    background-color: rgb(37 37 29);
+}
 .center{
     text-align: center;
 }
