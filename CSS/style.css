@@ -14,7 +14,7 @@
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: absolute;
 }
 /* navbar:image style */
 #logo{
@@ -23,6 +23,12 @@
 #logo img{
     height: 113px;
     margin: 10px 11px;
+    
+    border: 5px solid transparent;
+    border-radius: 65px;
+}
+#logo img:hover{
+    border: 5px solid #FFEFBA;
 }
 #navbar ul{
     display: flex;
@@ -65,7 +71,7 @@
     display: flex;
     flex-direction: column;
     padding: 4px 200px;
-    height: 400px;
+    height: 742px;
     justify-content: center;
     align-items: center;
 }
@@ -82,11 +88,24 @@
 
 /* Utility Classes */
 .h-primary{
-    color: white;
+    color: gainsboro;
     text-align: center;
     font-family: 'Baloo Bhaina 2', cursive;
-
+    border: 2px solid burlywood;
+    width: 32%;
+    display: block;
+    margin: auto;
+    background-image: linear-gradient(to right, red , yellow);
+    border-radius: 21px;
+    
 }
+ .h-secondary{
+    font-family: 'Baloo Bhaina 2', cursive;
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ }
 #home p{
     color: white;
     text-align: center;
@@ -111,4 +130,127 @@
    background-color: tomato;
    cursor: pointer;
    
+}
+.center{
+    text-align: center;
+}
+#services{
+    margin: 24px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 6px;
+    padding: 10px;
+    border-radius: 22px;
+    background-color: whitesmoke;
+}
+#services .box img{
+       display: block;
+       width: 49%;
+       margin: 0px auto;   
+
+}
+#services .box p{
+    font-family: 'Baloo Tamma 2', cursive;
+}
+#services{}
+
+/* Client Section */
+
+.client-section{
+    height: 247px;
+    background: url('../cupcakes-690040_1920.jpg') center no-repeat;
+  
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-items{
+    margin: 20px 25px;
+}
+.client-items img {
+    height: 100px;
+    border:2px solid white;
+    border-radius: 30px;
+   }
+   .client-items img:hover {
+     border: 1px solid rgb(201, 201, 201);
+   
+   }
+#client-section::before{
+    content: "";
+    background: url('../cupcakes-690040_1920.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+/* Contact Us  */
+#contact{
+    height: 400px;
+    position: relative;
+}
+#contact::before{
+    content:"" ;
+    background: url('../FooterImg2.jpg') center no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1 ;
+}
+/* Form */
+fieldset{
+    padding: 4px 14px;
+}
+#contact-box p{
+    color:whitesmoke;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: bold;
+}
+textarea{
+    border:3px solid rgb(231, 175, 175);
+    border-radius: 10px;
+    background-color: rgb(221, 209, 188);
+}
+.form-group{
+    margin:0px 96px; 
+    
+}
+.patti{
+    padding: 5px 4px;
+    margin: 2px 5px;
+    background-color: rgb(221, 209, 188);
+}
+
+.submit{
+    display: block;
+    width: 22%;
+    margin: 9px 27px;
+    padding: 4px;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: yellowgreen;
+    border-radius: 7px;
+}
+.submit:hover{
+    
+    background-color: chartreuse;
+}
+
+
+
+/* Footer */
+footer{
+    color: white;
+    background-color: black;
 }
